@@ -1,21 +1,42 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- <div class="main-container">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
 
-<router-outlet></router-outlet>
+  <mat-sidenav-container class="garden-sidebar">
+    <mat-sidenav mode="side" opened>
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>Main</mat-sidenav-content>
+  </mat-sidenav-container>
+</div> -->
+
+<div class="main-container"> 
+    <mat-toolbar color="primary" class="topbar telative">
+        <div class="navbar-header">
+          Header
+<!--             <a class="navbar-brand" href="index.html">
+                <b>  <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo">  </b>
+                <span fxShow="false" fxShow.gt-xs>
+                 <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo">
+                 <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage">
+                </span> </a> -->
+        </div>
+        
+        <button>toggle </button>
+        <!-- <span fxFlex></span> -->
+        <app-header></app-header>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="example-sidenav-container">
+        <mat-sidenav id="snav" mode="side" opened>
+            
+                <app-sidebar></app-sidebar>
+               
+            
+        </mat-sidenav>
+
+        <mat-sidenav-content class="page-wrapper">                 
+                <div class="page-content"> Page content </div>               
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
