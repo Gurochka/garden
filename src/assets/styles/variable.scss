@@ -1,9 +1,3 @@
-/*
-Template Name: Material Pro Admin
-Author: Themedesigner
-Email: niravjoshi87@gmail.com
-File: scss
-*/
 // Variables
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
@@ -16,10 +10,6 @@ $headingfont: 'Lato', sans-serif;
 @import 'palette';
 
 /*Material Theme Colors*/
-
-// $primary: mat-palette($mat-blue, 600);
-// $accent: mat-palette($mat-indigo, 500);
-// $warn: mat-palette($mat-pink, 500);
 
 $primary: mat-palette($mat-emerald, 600);
 $accent: mat-palette($mat-midnight, 600);
@@ -94,7 +84,7 @@ $inverse-dark: #232a37;
 $dark-transparent: rgba(0, 0, 0, 0.05);
 
 /*Normal Color*/
-$white: #ffffff;
+$white: #FEFDFC;
 $red: #fb3a3a;
 $yellow: #a0aec4;
 $purple: #7460ee;
