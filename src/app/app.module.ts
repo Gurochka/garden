@@ -4,21 +4,28 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppHeaderComponent } from './shared/header/header.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { MaterialModule } from './material.module';
+
+import { PublicModule } from './public/public.module';
+import { PublicComponent } from './public/public.component';
+
+import { UserModule } from './user/user.module';
+import { AppUser } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppHeaderComponent,
-    SidebarComponent
+    PublicComponent,
+    AppUser
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    PublicModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

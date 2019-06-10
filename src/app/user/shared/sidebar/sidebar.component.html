@@ -1,0 +1,56 @@
+<div class="user-profile" style="background: url(assets/images/userProfile.jpg) no-repeat;">
+    <div class="profile-img"> <img src="assets/images/userPic.jpg" alt="user"> </div>
+
+    <div class="profile-text"><a [matMenuTriggerFor]="sdprofile" class=""> Wilson Alba <mat-icon>keyboard_arrow_down</mat-icon></a></div>
+    <mat-menu #sdprofile="matMenu" class="mymegamenu">
+        <button mat-menu-item>
+            <mat-icon>settings</mat-icon> Settings </button>
+        <button mat-menu-item [routerLink]="['/user/profile']">
+            <mat-icon>account_box</mat-icon> Profile </button>
+        <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon> Sign Out </button>
+    </mat-menu>  
+</div>
+
+<mat-nav-list>
+  <h3 mat-subheader>Personal</h3>
+  <mat-list-item routerLinkActive="selected" [routerLinkActiveOptions]="{exact: true}">
+    <a routerLink="/user">
+      <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </a>
+  </mat-list-item>
+  
+  <mat-list-item routerLinkActive="selected">
+    <a [routerLink]="['/user/garden']">
+      <mat-icon>local_florist</mat-icon>
+      <span>My garden</span>
+    </a>
+  </mat-list-item>
+
+  <mat-list-item routerLinkActive="selected">
+    <a [routerLink]="['/user/calendar']">
+      <mat-icon>calendar_today</mat-icon>
+      <span>Calender</span>
+    </a>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+  
+  <h3 mat-subheader>Shared</h3>
+
+  <mat-list-item>
+    <a>
+      <mat-icon>spa</mat-icon>
+      <span>Plants</span>
+    </a>
+  </mat-list-item>
+
+  <mat-list-item>
+    <a>
+      <mat-icon>bug_report</mat-icon>
+      <span>Pests</span>
+    </a>
+  </mat-list-item>
+
+</mat-nav-list>

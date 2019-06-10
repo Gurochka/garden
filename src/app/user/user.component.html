@@ -1,0 +1,28 @@
+<div class="main-container"> 
+  <mat-toolbar color="primary" class="topbar telative">
+    <div class="navbar-header"> 
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/sprout_white.svg" alt="homepage" class="logo">
+        My Garden   
+      </a>
+    </div>
+
+    <button mat-icon-button aria-label="Menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <user-header></user-header>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav id="snav" mode="side" opened>    
+      <user-sidebar></user-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="page-wrapper">                 
+      <div class="page-content"> 
+        <router-outlet></router-outlet>
+      </div>               
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

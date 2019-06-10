@@ -164,17 +164,17 @@ use profile section
         }
     }
     .profile-text {
-        padding: 5px 0px;
         position: relative;
         cursor: pointer;
         white-space: nowrap;
         > a {
             color: $white!important;
             width: 100%;
-            padding: 6px 30px;
+            padding: 11px 30px;
             background: rgba(0, 0, 0, 0.5);
-            display: block;
+            display: flex;
             white-space: nowrap;
+            font-weight: bold;
             &:after{
                 position: absolute;
                 right: 20px;
