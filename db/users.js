@@ -2,7 +2,9 @@ module.exports = [{
     "id": 1,
     "name": "Leanne Graham",
     "username": "Bret",
-    "email": "Sincere@april.biz",
+    "email": "sincere@april.biz",
+    "password": "sincereuser",
+    "role": "user",
     "address": {
       "street": "Kulas Light",
       "suite": "Apt. 556",
@@ -19,7 +21,9 @@ module.exports = [{
     "id": 2,
     "name": "Ervin Howell",
     "username": "Antonette",
-    "email": "Shanna@melissa.tv",
+    "email": "shanna@melissa.tv",
+    "password": "shannauser",
+    "role": "user",    
     "address": {
       "street": "Victor Plains",
       "suite": "Suite 879",
@@ -35,7 +39,9 @@ module.exports = [{
     "id": 3,
     "name": "Clementine Bauch",
     "username": "Samantha",
-    "email": "Nathan@yesenia.net",
+    "email": "nathan@yesenia.net",
+    "password": "nathanuser",
+    "role": "user",    
     "address": {
       "street": "Douglas Extension",
       "suite": "Suite 847",
@@ -51,7 +57,9 @@ module.exports = [{
     "id": 4,
     "name": "Patricia Lebsack",
     "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
+    "email": "julianne.OConner@kory.org",
+    "password": "julianneuser",
+    "role": "user",  
     "address": {
       "street": "Hoeger Mall",
       "suite": "Apt. 692",
@@ -67,7 +75,9 @@ module.exports = [{
     "id": 5,
     "name": "Chelsey Dietrich",
     "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
+    "email": "lucio_hettinger@annie.ca",
+    "password": "luciouser",
+    "role": "user",      
     "address": {
       "street": "Skiles Walks",
       "suite": "Suite 351",
@@ -78,5 +88,23 @@ module.exports = [{
         "lng": "62.5342"
       }
     }
-  }
+  },
+  {
+    "id": 6,
+    "name": "Caterina Caselli",
+    "username": "cat",
+    "email": "admin@admin.com",
+    "password": "admin",
+    "role": "admin",      
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    }
+  }  
 ]

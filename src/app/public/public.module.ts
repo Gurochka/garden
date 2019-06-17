@@ -5,6 +5,7 @@ import { PublicHeaderComponent } from './shared/header/header.component';
 import { PlantsComponent } from './pages/plants/plants.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PestsComponent } from './pages/pests/pests.component';
+import { MaterialModule } from '../material.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PestsComponent } from './pages/pests/pests.component';
     PestsComponent
   ],
   imports: [
-    RouterModule
+    RouterModule,
+    MaterialModule
   ],
   exports: [
     PublicHeaderComponent,

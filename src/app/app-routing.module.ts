@@ -14,7 +14,7 @@ import { PestsComponent } from './public/pages/pests/pests.component';
 
 const routes: Routes = [
   { path: '', 
-    component: PublicComponent, 
+    component: PublicComponent,
     children: [
       { path: '', component: HomeComponent },
       { path: 'plants', component: PlantsComponent },

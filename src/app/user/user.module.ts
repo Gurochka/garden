@@ -8,6 +8,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { GardenComponent } from './pages/garden/garden.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 
+import { WeatherForecastComponent } from './components/weatherForecast/weatherForecast.component';
+
 import { MaterialModule } from '../material.module';
 
 @NgModule({
@@ -17,7 +19,9 @@ import { MaterialModule } from '../material.module';
     DashboardComponent,
     ProfileComponent,
     GardenComponent,
-    CalendarComponent
+    CalendarComponent,
+
+    WeatherForecastComponent
   ],
   imports: [
     MaterialModule,
